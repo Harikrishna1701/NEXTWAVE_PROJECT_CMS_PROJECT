@@ -1,0 +1,10 @@
+.navbar-items a{
+    margin: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-container{
+    border-bottom: 3px solid rgb(232, 232, 232);
+    padding: 30px;
+}
