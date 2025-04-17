@@ -8,7 +8,7 @@ const Content = () => {
     "Hyper boost your Revenue Management, Marketing and Commercial Functions with Business Ready AI"
   );
   const [tempHeading, setTempHeading] = useState(heading);
-  const [loading, setLoading] = useState(true);
+  //const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch('http://localhost:9191/api/heading')
@@ -18,7 +18,7 @@ const Content = () => {
           setHeading(data.heading);
           setTempHeading(data.heading);
         }
-        setLoading(false);
+        //setLoading(false);
       })
       .catch((error) => console.error('Error fetching heading:', error));
   }, []);
@@ -42,9 +42,9 @@ const Content = () => {
       });
   };
 
-  if (loading) {
-    return <p>Loading...</p>; // Loading UI
-  }
+  //if (loading) {
+    //return <p>Loading...</p>; // Loading UI
+  //}
 
   return (
     <div className="container">
